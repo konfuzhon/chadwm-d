@@ -1,6 +1,6 @@
 # chadwm (Initial look)
 
-<img src="https://github.com/konfuzhon/chadwm-d/screenshots/chadwm-display.png">
+<img src="https://github.com/konfuzhon/chadwm-d/tree/main/screenshots/chadwm-display.png">
 
 # Tag preview (while hovering tag icon)
 
