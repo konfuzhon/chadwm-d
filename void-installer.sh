@@ -8,4 +8,6 @@ mv rofi ..
 mv kitty ..
 cd chadwm
 sudo make install
-alias chadwm='startx ~/.config/chadwm/scripts/run.sh'
+echo "alias chadwm='startx ~/.config/chadwm/scripts/run.sh'" >> ~/.bashrc
+echo "Installation complete!"
+echo "Please reboot your computer."
