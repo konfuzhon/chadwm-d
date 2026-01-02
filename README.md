@@ -7,16 +7,16 @@
 https://user-images.githubusercontent.com/59060246/223068062-d3c9847a-8713-42c7-bc9d-07247a0486a8.mp4
 
 # Requirements
-Requirements are installed by the installer scripts.
+- git
 
 ## Other requirements
-- picom
-- feh
-- acpi
-- rofi
+Other requirements are installed by the install scripts.
 
 # Install
 
+```bash
+sudo xbps-install -S git
+```
 ```bash
 git clone https://github.com/konfuzhon/chadwm-d --depth 1  ~/.config/chadwm
 ```
