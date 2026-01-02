@@ -40,11 +40,8 @@ static const int new_window_attach_on_end = 0; /*  1 means the new window will a
 
 static const char *fonts[]          = {"Iosevka:style:medium:size=12" ,"JetBrainsMono Nerd Font Mono:style:medium:size=19" };
 
-// fonts
-#include "themes/nord.h"
-
 // theme
-#include "themes/tundra.h"
+#include "themes/nord.h"
 
 static const char *colors[][3]      = {
     /*                     fg       bg      border */
