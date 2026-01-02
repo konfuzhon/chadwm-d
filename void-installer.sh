@@ -7,6 +7,7 @@ mv eww ..
 mv rofi ..
 mv kitty ..
 mv nvim ..
+mv btop ..
 cd chadwm
 sudo make install
 echo "alias chadwm='startx ~/.config/chadwm/scripts/run.sh'" >> ~/.bashrc
