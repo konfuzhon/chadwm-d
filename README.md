@@ -75,8 +75,8 @@ eww open eww
 - @fitrh helped with [colorful tag patch](https://github.com/fitrh/dwm/issues/1)
 - [6gk](https://github.com/6gk/fet.sh), eww's pure posix fetch functions taken from here
 - [mafetch](https://github.com/fikriomar16/mafetch), modified version of this was used as fetch in the screenshots
-- [siduck] (https://github.com/NvChad/starter), for NvChad
-- [connorholyday] (https://github.com/connorholyday/nord-kitty), for the beautiful Kitty conf
+- [siduck](https://github.com/NvChad/starter), for NvChad
+- [connorholyday](https://github.com/connorholyday/nord-kitty), for the beautiful Kitty conf
 
 ## Patches
 
