@@ -7,12 +7,7 @@
 https://user-images.githubusercontent.com/59060246/223068062-d3c9847a-8713-42c7-bc9d-07247a0486a8.mp4
 
 # Requirements
-
-- dash (shell)
-- imlib2 
-- xsetroot package (status2d uses this to add colors on dwmbar)
-- JetbrainsMono Nerd Font or any nerd font but dont forget to set it in config.def.h
-- Make sure to setup your terminal's theme accordingly do chadwm's theme such as nord, onedark etc...
+Requirements are installed by the installer scripts.
 
 ## Other requirements
 - picom
@@ -22,58 +17,30 @@ https://user-images.githubusercontent.com/59060246/223068062-d3c9847a-8713-42c7-
 
 # Install
 
+```bash
+git clone https://github.com/konfuzhon/chadwm-d --depth 1  ~/.config/chadwm
 ```
-git clone https://github.com/siduck/chadwm --depth 1  ~/.config/chadwm
+```bash
 cd ~/.config/chadwm/
-mv eww ~/.config
-cd chadwm
-sudo make install
 ```
-(Note: chmod +x all of the scripts)
+```bash
+chmod +x void-installer.sh
+```
+```bash
+./void-installer.sh
+```
 
 # Run chadwm
 
-## With startx
-
-```shell
-startx ~/.config/chadwm/scripts/run.sh
+```bash
+chadwm
 ```
-
-## With sx
-
-```shell
-sx sh ~/.config/chadwm/scripts/run.sh
-```
-
-(Make an alias for this :v)
-
-```shell
-alias chadwm='startx ~/.config/chadwm/scripts/run.sh'
-```
-
-## With Display Manager
-
-- Create a desktop entry (make sure to change `user` with your user):
-
-```shell
-sudo touch /usr/share/xsessions/chadwm.desktop  
-```
-
-```
-[Desktop Entry]
-Name=chadwm
-Comment=dwm made beautiful 
-Exec=/home/user/.config/chadwm/scripts/./run.sh 
-Type=Application 
-```
-
-- [wallpaper](https://github.com/siduck/chadwm/blob/screenshots/screenshots/chad.png)
 
 # Recompile
 
 - You need to recompile dwm after every change you make to its source code.
 
-```
+```bash
 cd ~/.config/chadwm/chadwm
 rm config.h
 sudo make install
