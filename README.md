@@ -6,6 +6,7 @@ chadwm with a better README.md, an install script, opinionated setup, and ease o
 ## Tag preview (while hovering tag icon)
 
 https://user-images.githubusercontent.com/59060246/223068062-d3c9847a-8713-42c7-bc9d-07247a0486a8.mp4
+*Note: Tag previews are not yet working.
 
 ## Requirements
 - git
