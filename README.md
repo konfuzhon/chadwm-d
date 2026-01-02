@@ -1,18 +1,19 @@
-# chadwm (Initial look)
+# chadwm-d (Initial look)
+chadwm with a better README.md, an install script, opinionated setup, and ease of use for noobs
 
 <img src="https://raw.githubusercontent.com/konfuzhon/chadwm-d/refs/heads/main/screenshots/chadwm-display.png">
 
-# Tag preview (while hovering tag icon)
+## Tag preview (while hovering tag icon)
 
 https://user-images.githubusercontent.com/59060246/223068062-d3c9847a-8713-42c7-bc9d-07247a0486a8.mp4
 
-# Requirements
+## Requirements
 - git
 
 ## Other requirements
 Other requirements are installed by the install scripts.
 
-# Install
+## Install
 
 ```bash
 sudo xbps-install -S git
@@ -23,6 +24,7 @@ git clone https://github.com/konfuzhon/chadwm-d --depth 1  ~/.config/chadwm
 ```bash
 cd ~/.config/chadwm/
 ```
+*Note: For the next two commands, replace "void" with the name of your distro.
 ```bash
 chmod +x void-installer.sh
 ```
@@ -30,13 +32,13 @@ chmod +x void-installer.sh
 ./void-installer.sh
 ```
 
-# Run chadwm
+## Run chadwm
 
 ```bash
 chadwm
 ```
 
-# Recompile
+## Recompile
 
 - You need to recompile dwm after every change you make to its source code.
 
@@ -46,13 +48,13 @@ rm config.h
 sudo make install
 ```
 
-# Change themes
+## Change themes
 
 - Bar  : in bar.sh (line 9) and config.def.h (line 35)
 - eww  : in eww.scss (line 1)
 - rofi : in config.rasi (line 15)
 
-# Eww
+## Eww
 
 - First, make sure you have copied the eww directory to your config:
 
@@ -69,14 +71,14 @@ eww open eww
 
 - It could be a good idea to add these lines to your autostart file, located at ~/.config/chadwm/scripts/run.sh
 
-# Credits
+## Credits
 
 - HUGE THANKS to [eProTaLT83](https://www.reddit.com/user/eProTaLT83). I wanted certain features in dwm like tabbar in monocle, tagpreview etc and he implemented my ideas and created patches for me! I can't even count the number of times he has helped me :v
 - @fitrh helped with [colorful tag patch](https://github.com/fitrh/dwm/issues/1)
 - [6gk](https://github.com/6gk/fet.sh), eww's pure posix fetch functions taken from here
 - [mafetch](https://github.com/fikriomar16/mafetch), modified version of this was used as fetch in the screenshots
 
-# Patches
+## Patches
 
 - [systray](https://gitlab.com/-/snippets/2184056)
 - systray iconsize
