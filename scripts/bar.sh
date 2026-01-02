@@ -27,13 +27,6 @@ pkg_updates() {
   fi
 }
 
-battery() {
-  val="$(cat /sys/class/power_supply/BAT1/capacity)"
-  printf "^c$black^ ^b$red^ BAT"
-  printf "^c$white^ ^b$grey^ $val ^b$black^"
-
-}
-
 brightness() {
   printf "^c$red^   "
   printf "^c$red^%.0f\n" $(cat /sys/class/backlight/*/brightness)
@@ -61,5 +54,5 @@ while true; do
   [ $interval = 0 ] || [ $(($interval % 3600)) = 0 ] && updates=$(pkg_updates)
   interval=$((interval + 1))
 
-  sleep 1 && xsetroot -name "$updates $(cpu) $(battery) $(mem) $(wlan) $(clock)"
+  sleep 1 && xsetroot -name "$updates $(cpu) $(mem) $(wlan) $(clock)"
 done
